@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Judul" />
+
+    <EditText
+        android:id="@+id/deskiripsi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top|start"
+        android:hint="Input Deskripsi" />
+
+    <Button
+        android:id="@+id/filePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka File Manager" />
+
+    <Button
+        android:id="@+id/cameraPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buka Kamera" />
+
+    <Button
+        android:id="@+id/uploadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload File" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
